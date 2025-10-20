@@ -1,7 +1,20 @@
 # Import python packages
 import streamlit as st
 from snowflake.snowpark.context import get_active_session
-from snowflake.snowpark import session
+#from snowflake.snowpark import session
+
+from snowflake.snowpark import Session
+      connection_parameters = {     
+        "account": "LLIIMCR-TCB73874",
+        "user": "JESSICA",
+        "role":"SYSADMIN",
+        "database":"<your snowflake database>",
+        "schema":"<your snowflake schema",
+        "warehouse":"<your snowflake warehouse>",
+        "authenticator":"externalbrowser"
+      }
+session = Session.builder.configs(connection_parameters).create()
+
 from snowflake.snowpark.functions import col, when_matched
 
 # Write directly to the app
