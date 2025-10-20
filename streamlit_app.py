@@ -4,17 +4,16 @@ from snowflake.snowpark.context import get_active_session
 #from snowflake.snowpark import session
 
 from snowflake.snowpark import session
-      connection_parameters = {     
-       "account": "LLIIMCR-TCB73874",
-        "user": "JESSICA",
-        "password": = "EmploiLarochelle_1292",
-        "role":"SYSADMIN",
-        "database":"SMOOTHIES",
-        "schema":"PUBLIC,
-        "warehouse":"COMPUTE_WH"
-       
-      }
-session = session.builder.configs(connection_parameters).create()
+     [connections.snowflake]
+account = "LLIIMCR-TCB73874"
+password = "EmploiLarochelle_1292"
+user = "JESSICA"
+role = "SYSADMIN"
+warehouse = "COMPUTE_WH"
+database = "SMOOTHIES"
+schema = "PUBLIC"
+
+session = session.builder.configs(session).create()
 
 from snowflake.snowpark.functions import col, when_matched
 
