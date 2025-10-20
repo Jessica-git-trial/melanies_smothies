@@ -7,11 +7,12 @@ from snowflake.snowpark import Session
       connection_parameters = {     
         "account": "LLIIMCR-TCB73874",
         "user": "JESSICA",
+        "password": = "EmploiLarochelle_1292",
         "role":"SYSADMIN",
-        "database":"<your snowflake database>",
-        "schema":"<your snowflake schema",
-        "warehouse":"<your snowflake warehouse>",
-        "authenticator":"externalbrowser"
+        "database":"SMOOTHIES",
+        "schema":"PUBLIC,
+        "warehouse":"COMPUTE_WH",
+       
       }
 session = Session.builder.configs(connection_parameters).create()
 
