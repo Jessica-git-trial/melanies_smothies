@@ -5,13 +5,13 @@ from snowflake.snowpark.context import get_active_session
 
 from snowflake.snowpark import Session
       connection_parameters = {     
-        account: "LLIIMCR-TCB73874",
-        user: "JESSICA",
-        password: = "EmploiLarochelle_1292",
-        role:"SYSADMIN",
-        database:"SMOOTHIES",
-        schema:"PUBLIC,
-        warehouse:"COMPUTE_WH"
+       "account": "LLIIMCR-TCB73874",
+        "user": "JESSICA",
+        "password": = "EmploiLarochelle_1292",
+        "role":"SYSADMIN",
+        "database":"SMOOTHIES",
+        "schema":"PUBLIC,
+        "warehouse":"COMPUTE_WH"
        
       }
 session = Session.builder.configs(connection_parameters).create()
