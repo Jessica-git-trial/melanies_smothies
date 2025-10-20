@@ -3,7 +3,7 @@ import streamlit as st
 from snowflake.snowpark.context import get_active_session
 #from snowflake.snowpark import session
 
-from snowflake.snowpark import Session
+from snowflake.snowpark import session
       connection_parameters = {     
        "account": "LLIIMCR-TCB73874",
         "user": "JESSICA",
@@ -14,7 +14,7 @@ from snowflake.snowpark import Session
         "warehouse":"COMPUTE_WH"
        
       }
-session = Session.builder.configs(connection_parameters).create()
+session = session.builder.configs(connection_parameters).create()
 
 from snowflake.snowpark.functions import col, when_matched
 
