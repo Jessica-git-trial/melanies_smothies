@@ -6,7 +6,7 @@ from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark import session
     
 
-session = session.builder.configs(session).create()
+#session = session.builder.configs(session).create()
 
 from snowflake.snowpark.functions import col, when_matched
 
