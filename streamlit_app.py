@@ -4,14 +4,7 @@ from snowflake.snowpark.context import get_active_session
 #from snowflake.snowpark import session
 
 from snowflake.snowpark import session
-     connections.snowflake
-account = "LLIIMCR-TCB73874"
-password = "EmploiLarochelle_1292"
-user = "JESSICA"
-role = "SYSADMIN"
-warehouse = "COMPUTE_WH"
-database = "SMOOTHIES"
-schema = "PUBLIC"
+    
 
 session = session.builder.configs(session).create()
 
